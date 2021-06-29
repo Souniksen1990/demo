@@ -10,3 +10,5 @@
 
 - [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
 
+Sample application to reproduce byteBuf leak error on using large InputStream ( > 50 mb ) as http request body.
+
