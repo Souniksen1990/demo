@@ -1,3 +1,11 @@
 micronaut:
   application:
-    name: demo
+    name: largeInputStream
+  server:
+    port: 8080
+    thread-selection: io
+    max-request-size: 100MB
+  executors:
+    io:
+      type: fixed
+      n-threads: 10
